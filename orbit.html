@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-color: #080E24;
+        }
+
+        .main {
+            width: 1000px;
+            height: 700px;
+            border: 2px solid red;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        @keyframes solar{
+            0%{
+               transform: rotate(0deg); 
+            }
+            100%{
+               transform: rotate(360deg); 
+            }
+        }
+        .sun {
+            width: 91px;
+            height: 91px;
+            background-color: orange;
+            box-shadow: 2px 3px 15px 4px  orange;
+            border-radius: 50px;
+            position: absolute;
+            top: 43.5%;
+            left: 42.5%;
+        }
+
+        .orbit-1 {
+            width: 136px;
+            height: 136px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            animation: solar 6s 0s infinite linear;
+        }
+
+        .planet-1 {
+            width: 15px;
+            height: 15px;
+            background-color: rgb(76, 0, 255);
+             box-shadow: 2px 2px 15px 3px rgb(76, 0, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: -5%;
+            left: 35%;
+        }
+
+        .orbit-2 {
+            width: 176px;
+            height: 176px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 37%;
+            left: 38%;
+            animation: solar 7s 0s infinite linear;
+        }
+
+        .planet-2 {
+            width: 15px;
+            height: 15px;
+            background-color: aqua;
+             box-shadow: 2px 2px 15px 3px aqua;
+            border-radius: 50%;
+            position: absolute;
+            top: -3%;
+            left: 35%;
+        }
+
+        .orbit-3 {
+            width: 222px;
+            height: 222px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 34%;
+            left: 36%;
+            animation: solar 8s 0s infinite linear;
+        }
+
+        .planet-3 {
+            width: 15px;
+            height: 15px;
+            background-color: rgb(255, 251, 0);
+              box-shadow: 2px 2px 15px 3px rgb(255, 251, 0);
+            border-radius: 50%;
+            position: absolute;
+            top: -2%;
+            left: 35%;
+            animation: solar 5s 0s infinite linear;
+
+        }
+
+        @keyframes solar{
+            0%{
+               transform: rotate(0deg); 
+            }
+            100%{
+               transform: rotate(360deg); 
+            }
+        }
+        .secplanet {
+            width: 8px;
+            height: 8px;
+            background-color: rgb(255, 0, 0);
+             box-shadow: 2px 2px 15px 1px  rgb(255, 0, 0);
+            border-radius: 50px;
+            position: absolute;
+            top: -63%;
+            left: 36%;
+
+        }
+
+        .orbit-4 {
+            width: 274px;
+            height: 274px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+            left: 33%;
+            animation: solar 9s 0s linear infinite;
+        }
+
+        .planet-4 {
+            width: 15px;
+            height: 15px;
+            background-color: rgb(255, 0, 157);
+            box-shadow: 2px 2px 15px 3px rgb(255, 0, 157);
+            border-radius: 50%;
+            position: absolute;
+            top: -1%;
+            left: 35%;
+        }
+
+        .orbit-5 {
+            width: 313px;
+            height: 313px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 27%;
+            left: 31%;
+            animation: solar 10s 0s linear infinite;
+        }
+
+        .planet-5 {
+            width: 15px;
+            height: 15px;
+            background-color: rgb(236, 219, 229);
+             box-shadow: 2px 2px 15px 3px rgb(236, 219, 229);
+            border-radius: 50%;
+            position: absolute;
+            top: -1%;
+            left: 35%;
+        }
+
+        .orbit-6 {
+            width: 363px;
+            height: 363px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 23.5%;
+            left: 28.5%;
+            animation: solar 11s 0s linear infinite;
+        }
+
+        .planet-6 {
+            width: 15px;
+            height: 15px;
+            background-color: rgb(210, 30, 135);
+               box-shadow: 2px 2px 15px 3px rgb(210, 30, 135);
+            border-radius: 50%;
+            position: absolute;
+            top: -1%;
+            left: 35%;
+        }
+
+        .ring {
+            width: 13px;
+            height: 41px;
+            border: 2px solid #5a4e34;
+            border-radius: 50%;
+            position: absolute;
+            top: -96%;
+            left: -1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sun"></div>
+
+        <div class="orbit-1">
+            <div class="planet-1"></div>
+        </div>
+
+        <div class="orbit-2">
+            <div class="planet-2"></div>
+        </div>
+
+        <div class="orbit-3">
+            <div class="planet-3">
+                <div class="secplanet"></div>
+            </div>
+        </div>
+
+        <div class="orbit-4">
+            <div class="planet-4"></div>
+        </div>
+
+        <div class="orbit-5">
+            <div class="planet-5"></div>
+        </div>
+
+        <div class="orbit-6">
+            <div class="planet-6">
+                <div class="ring"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
